@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 100px; /* Prevent content from hiding behind fixed header */
+}
+  header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e3d59;
+  color: white;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-image: url('foot-bg.jpg');
+  background-position: center;
+  height: 225px;
+  width: 1475px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero {
+  background: url('football-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.teams {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.teams-right {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.teams-right .team-card {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 20px;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.team-list li a {
+  display: block;
+  background-color: #1e3d59;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.team-list li a:hover {
+  background-color: #3e5f7d;
+}
+
+.players-section {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f0f4ff, #dfe9f3);
+  text-align: center;
+}
+
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.player-card {
+  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+  transform: rotate(45deg);
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% { transform: rotate(45deg) translateX(-100%); }
+  100% { transform: rotate(45deg) translateX(100%); }
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #1e3d59;
+}
+
+.player-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #1e3d59;
+}
+
+.player-card a {
+  text-decoration: navy;
+  color: #1e3d59;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.player-card a:hover {
+  color:#023e8a;
+}
+
+footer {
+  background-color: #1e3d59;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

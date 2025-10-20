@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Fan Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header style="height: 155px;width: 1475px;">
+
+    <h1>Football Fan Zone</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 style="color: crimson;">Welcome to the Ultimate Football Experience</h2>
+    <p style="color:black">Catch all the latest updates, match highlights, and team news.</p>
+  </section>
+
+  <section id="teams" class="teams-right">
+  <h2>Our Teams</h2>
+  <div class="team-card">
+    <img src="team1.jpg" alt="Team 1" />
+    <h3>Red Warriors</h3>
+  </div>
+  <!-- Add more team cards as needed -->
+</section>
+
+  <section class="teams">
+    <h2>Featured Teams</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="Team1.png" alt="Team 1" />
+        <h3>Real Madrid CF</h3>
+      </div>
+      <div class="team-card">
+        <img src="Team2.png" alt="Team 2" />
+        <h3>Barcelona</h3>
+      </div>
+      <div class="team-card">
+        <img src="Team3.png" alt="Team 3" />
+        <h3>Manchester United</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="teams" class="teams-section">
+  <h2>Featured Teams</h2>
+  <ul class="team-list">
+    <li><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." target="_blank">Manchester United</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF" target="_blank">Real Madrid</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/FC_Barcelona" target="_blank">FC Barcelona</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Bayern_Munich" target="_blank">Bayern Munich</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Juventus_F.C." target="_blank">Juventus</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C." target="_blank">Paris Saint-Germain</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." target="_blank">Chelsea</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." target="_blank">Liverpool</a></li>
+  </ul>
+</section>
+
+<section id="players" class="players-section">
+  <h2>Star Players</h2>
+  <div class="player-grid">
+    <div class="player-card">
+      <img src="ney.jpeg" alt="Neymar" />
+      <h3><a href="https://en.wikipedia.org/wiki/Neymar" target="_blank">Neymar  (Santos FC)
+      </a></h3>
+    </div>
+    <div class="player-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/440px-Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo" />
+      <h3><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Cristiano Ronaldo  (AL Nassr)</a></h3>
+    </div>
+    <div class="player-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/440px-Lionel_Messi_20180626.jpg" alt="Lionel Messi" />
+      <h3><a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Lionel Messi  (Inter Miami)</a></h3>
+    </div>
+    <div class="player-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/440px-Lionel_Messi_20180626.jpg" alt="Lionel Messi" />
+      <h3><a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Lionel Messi  (Inter Miami)</a></h3>
+    </div>
+  </div>
+</section>
+
+<section id="fixtures" class="fixtures-section">
+  <h2>Live Match Fixtures</h2>
+  <div id="fs-upcoming"></div>
+  <script>
+    (function (w,d,s,o,f,js,fjs) {
+      w['fsUpcomingEmbed']=o;w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)};
+      js=d.createElement(s),fjs=d.getElementsByTagName(s)[0];
+      js.id=o;js.src=f;js.async=1;fjs.parentNode.insertBefore(js,fjs);
+    })(window,document,'script','fsUpcoming','https://footystats.org/embeds/upcoming.js');
+    fsUpcoming('params', {
+      teamID: 84, // Real Madrid CF
+      width: '100%',
+      height: '600px',
+      theme: 'light'
+    });
+  </script>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Football Fan Zone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
